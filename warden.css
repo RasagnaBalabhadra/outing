@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    
+}
+.table-container{
+    padding: 0 10%;
+    margin : 40px auto 0;
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+.table{
+    width : 100%;
+    border-collapse: collapse;
+
+}
+.table thead{
+    background-color: #ee2828;
+
+}
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color:#FFFFFF;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border : 1px solid #dee2e685;
+
+}
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border : 1px solid #dee2e685;
+}
+.table .green{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    color : black;
+    background-color: green;
+
+    
+}
+.table .red{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    color : black;
+    background-color: #ee2828;
+}
+a{
+    text-decoration: none;
+}
+#tooltip{
+    position: relative;
+    cursor: pointer;
+    
+    padding: 7px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#reason{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: #f1f1f1;
+    color: #FFFFFF;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+#reason ::after{
+    content : "";
+    position: absolute;
+    left: 50%;
+    top : 100%;
+    transform: translateX(-50%);
+    border : 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+}
+#tooltip:hover #reason{
+    top : -130%;
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approval</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="approvals.css">
+    <script>
+
+        function r() {
+            var r = document.getElementById('reject')
+            reject.style.visibility = "visible"
+
+
+        }
+        function f() {
+            var t = document.getElementById('card')
+
+
+            t.style.visibility = "visible";
+
+        };
+        function pre() {
+            var h = document.getElementById('h1')
+            var rt = document.getElementById('rt')
+            h.style.visibility = "visible"
+            rt.style.visibility = "visible"
+        }
+        function accept(){
+            alert('Approved and Sent to Warden')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <h2 class="h2">Approvals</h2>
+
+        <table class="table table-info" id="f">
+            <tr>
+                <td>1</td>
+                <td><a href="#" onclick="f()">(click here) 21b01a1214</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="#"> 21b05a1206</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="#"> 21b01a12i4</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="#"> 21b01a12a0</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="#"> 21b01a12h2</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a href="#"> 21b01a1275</a></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+
+
+
+        <div class="card card text-center col-4" style="width: 18rem; visibility: hidden; " id="card">
+            <div class="card-body">
+                <a href="#" class="btn btn-secondary" onclick="pre()">Pre Outings</a><br><br>
+                <h5 class="card-title">Student Approval</h5>
+                <b class="card-text">
+                    Name: Sneha <br><br>
+                    Reason: Fever
+                </b> <br><br>
+                
+                <a href="#" class="btn btn-success popup" onclick="accept()">Accept</a>
+               
+                <a href="#" class="btn btn-danger" id="r" onclick="r()">Reject</a>
+                <input type="text" name="" id="reject" placeholder="reason" style="visibility: hidden;">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <table style="width: 50%;visibility: hidden;" class="table table-striped" id="rt">
+            <center style="visibility: hidden;">
+                <p class="h1" id="h1" style="color: white;">PREVIOUS OUTINGS</p>
+            </center>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+                <th>Reason</th>
+                <th>Place</th>
+            </tr>
+            <tr>
+                <td>28/05/22</td>
+                <td>01/06/22</td>
+                <td>Fever</td>
+                <td>Amalapuram</td>
+            </tr>
+            <tr>
+                <td>11/08/22</td>
+                <td>16/08/22</td>
+                <td>Festival</td>
+                <td>Amalapuram</td>
+            </tr>
+            <tr>
+                <td>31/10/22</td>
+                <td>7/10/22</td>
+                <td>marriage</td>
+                <td>Amalapuram</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

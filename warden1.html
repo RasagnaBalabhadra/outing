@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="warden.css">
+    <script>
+        function h(){
+                alert('permission Accepted');
+        }
+        function hr(){
+            alert('permission rejected');
+        }
+    </script>
+</head>
+<body>
+    <div class="table-container">
+        <h1 class="heading">Warden Permission</h1>
+        <table class = "table">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                     <th>Local</th>
+                     <th>#</th>
+                     <th>S.No</th>
+                     <th>Outof</th>
+                     <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label = "S.No">1</td>
+                    <td data-label = "Local">
+                        <!-- <a href="#" style = "color :aliceblue">21b01a1215</a></td> -->
+                        <div id = "tooltip">
+                            <span id = "reason" style="color :black">Reason : <br>Shopping</span>(hover here)
+                            <span style = "color :aliceblue">21b01a1215</span>
+                        </div>
+                    <td data-label="#"><button class = "green" id="h" onclick="h()">Accept</button>
+                   <button class = "red" onclick="hr()">Reject</button>
+                    <td data-label="S.No">1</td>
+                    <td data-label="OutOf"><a href="#" style = "color :aliceblue">21b01a1214</a></td>
+                    <td data-label="#"><button class = "green"id="h" onclick="h()">Accept</button>
+                        <button class = "red"onclick="hr()">Reject</button>
+
+                </tr>
+                <tr>
+                    <td data-label = "S.No">1</td>
+                    <td data-label = "Local"><a href="#" class = "" style = "color :aliceblue">21b01a1215</a></td>
+                    <td data-label="#"><button class = "green"id="h" onclick="h()">Accept</button>
+                   <button class = "red"onclick="hr()">Reject</button>
+                    <td data-label="S.No">1</td>
+                    <td data-label="OutOf"><a href="#"style = "color :aliceblue">21b01a1214</a></td>
+                    <td data-label="#"><button class = "green"id="h" onclick="h()">Accept</button>
+                        <button class = "red"onclick="hr()">Reject</button>
+
+                </tr>
+                <tr>
+                    <td data-label = "S.No">1</td>
+                    <td data-label = "Local"><a href="#"style = "color :aliceblue">21b01a1215</a></td>
+                    <td data-label="#"><button class = "green"id="h" onclick="h()">Accept</button>
+                   <button class = "red"onclick="hr()">Reject</button>
+                    <td data-label="S.No">1</td>
+                    <td data-label="OutOf"><a href="#"style = "color :aliceblue">21b01a1214</a></td>
+                    <td data-label="#"><button class = "green"id="h" onclick="h()">Accept</button>
+                        <button class = "red"onclick="hr()">Reject</button>
+
+                </tr>
+                <tr>
+                    <td data-label = "S.No">1</td>
+                    <td data-label = "Local"><a href="#"style = "color :aliceblue">21b01a1215</a></td>
+                    <td data-label="#"><button class = "green"id="h" onclick="h()">Accept</button>
+                   <button class = "red"onclick="hr()">Reject</button>
+                    <td data-label="S.No">1</td>
+                    <td data-label="OutOf"><a href="#"style = "color :aliceblue">21b01a1214</a></td>
+                    <td data-label="#"><button class = "green"id="h" onclick="h()">Accept</button>
+                        <button class = "red"onclick="hr()">Reject</button>
+
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</html>
